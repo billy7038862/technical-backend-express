@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  postgres:
+    image: postgres:15.3-alpine3.18
+    restart: always
+    environment:
+      POSTGRES_USER: general_user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: test
+      TZ: GMT+0
+    ports:
+      - 5400:5432
