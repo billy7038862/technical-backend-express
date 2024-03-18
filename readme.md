@@ -17,7 +17,10 @@ This is a simple, full-stack to-do list application built with React, Node.js, a
 ## Getting Started
 
 ### Backend
-1. Navigate to the backend directory.
+1. Clone the repository:
+
+bash
+git clone https://github.com/billy7038862/technical-backend-express.git
     
 2. Install the dependencies.
     
@@ -27,13 +30,13 @@ This is a simple, full-stack to-do list application built with React, Node.js, a
     
     PGUSER=your_user
     
-    PGHOST=localhost
+    PGHOST=your_host
     
     PGDATABASE=your_database
     
     PGPASSWORD=your_password
     
-    PGPORT=5432
+    PGPORT=5400
     
 4. Run `dokcer compose up` to init postgreDB
 
@@ -41,38 +44,12 @@ This is a simple, full-stack to-do list application built with React, Node.js, a
     
     `npm start`
     
-The backend server will start running at http://localhost:3000.
+The backend server will start running at http://localhost:3001.
 
-### Frontend
-1. Navigate to the frontend directory.
-    
-    cd frontend
-    
-2. Install the dependencies.
-    
-    npm install
-    
-3. Start the frontend server.
-    
-    npm run develop
-    
-Your browser should automatically open http://localhost:8080. If it doesn't, manually open the URL in your browser.
-
-## Usage
-On the frontend, you will see a list of to-do items (if any) fetched from the backend.
-
- You can add new to-do items using the form at the top of the page.
- 
- You can edit item by clicking the field and change its value and press enter.
 
 ## Testing
 To run the tests for the backend or frontend, navigate to the corresponding directory and run the following command:
 npm test
 
-
-## Screenshots
-Todo list
-
-![Todolist_screenshot](./image_2024-03-18_23-05-58.png)
 
 
