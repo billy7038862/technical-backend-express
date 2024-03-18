@@ -12,7 +12,7 @@ const pool = new Pool({
 });
 
 // Function to setup database schema
-const setupDatabase = async () => {
+export const setupDatabase = async () => {
   await pool.query(`
     CREATE TABLE IF NOT EXISTS todos (
       key SERIAL PRIMARY KEY,
@@ -22,7 +22,7 @@ const setupDatabase = async () => {
   `);
 };
 
-const app = express();
+export const app = express();
 app.use((cors as (options: cors.CorsOptions) => express.RequestHandler)({}));
 app.use(express.json());
 
