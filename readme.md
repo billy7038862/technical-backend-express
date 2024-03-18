@@ -48,7 +48,7 @@ The backend server will start running at http://localhost:3001.
 
 
 ## Testing
-To run the tests for the backend or frontend, navigate to the corresponding directory and run the following command:
+To run the tests for the backend, navigate to the corresponding directory and run the following command:
 npm test
 
 
